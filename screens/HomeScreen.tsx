@@ -64,8 +64,8 @@ const HomeScreen: React.FC<Props> = ({ navigation, dishes }) => {
         <Text style={styles.sectionTitle}>Menu Items</Text>
         {dishes.length === 0 ? (
           <View style={styles.emptyContainer}>
-            <Text style={styles.emptyText}>No menu items added yet</Text>
-            <Text style={styles.emptySubtext}>Tap "Add Menu Item" to get started</Text>
+            <Text style={styles.emptyText}>No dishes added yet</Text>
+            <Text style={styles.emptySubtext}>Add your first menu item to get started!</Text>
           </View>
         ) : (
           <FlatList

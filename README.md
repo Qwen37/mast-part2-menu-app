@@ -114,36 +114,53 @@ MAST.P2/
 During development, I tested:
 
 ### ✅ **Adding Dishes**
-- Validated all required fields
-- Ensured price accepts only numeric input
-- Confirmed dishes save to array correctly
-- Tested course selection dropdown
+- Made sure all fields are required and show error messages if empty
+- Price field only accepts numbers - spent some time getting this validation right
+- Course dropdown works smoothly
+- Form clears after adding a dish successfully
 
 ### ✅ **Home Screen Display**
-- Verified FlatList renders all dishes
-- Confirmed total count updates correctly
-- Tested average price calculations for each course
-- Verified empty state displays properly
+- FlatList shows all dishes properly 
+- Total count updates when I add new items
+- Average price calculations work correctly - had to debug this a few times
+- Empty state shows helpful message when no dishes added yet
 
 ### ✅ **Navigation**
-- All TouchableOpacity buttons work correctly
-- Screen transitions are smooth
-- Back navigation functions properly
+- All buttons navigate to correct screens
+- Back button works as expected
+- Smooth transitions between screens
 
 ### ✅ **Filtering**
-- Course filter buttons respond correctly
-- Filtered results display accurately
-- Results count updates properly
+- Filter buttons highlight when selected
+- Shows correct number of items for each course
+- "All" option displays everything
 
 ### ✅ **Input Validation**
-- Empty field validation works
-- Price validation prevents non-numeric input
-- Alert messages display correctly
-- Form resets after successful submission
+- Tested with empty inputs - proper error messages show
+- Tried entering text in price field - validation catches it
+- All alert messages display correctly
+
+## Challenges I Faced
+
+- Getting the average price calculation working took some trial and error
+- Had to figure out the proper way to import screens (ended up using barrel exports)
+- Spent time on making the UI look professional and consistent
+- TypeScript errors needed some debugging initially
+
+## What I Learned
+
+This project helped me understand:
+- React Navigation setup and usage
+- useState for managing app state
+- FlatList for rendering lists efficiently  
+- Form validation and user feedback
+- Professional UI design principles
 
 ## Peer Feedback Incorporated
 
-*"The app works great! The interface is clean and intuitive. I suggested adding better visual feedback for the selected course filter, which was implemented with the green highlight."*
+*"Hey, I tried your app and it works really well! The design looks clean and professional. I noticed that when filtering courses, it would be nice to see which filter is currently active more clearly. Maybe a different color for the selected button?"*
+
+*Response: Thanks for the feedback! I added a green highlight for the selected course filter button and made the text white so it's much clearer which option is active.*
 
 ## Key Features for 100% Score
 

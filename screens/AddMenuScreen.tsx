@@ -70,15 +70,15 @@ const AddMenuScreen: React.FC<Props> = ({ navigation, onAddDish }) => {
     setPrice('');
     
     Alert.alert(
-      'Success', 
-      'Dish added successfully!',
+      'Success!', 
+      'Dish added successfully',
       [
         {
           text: 'Add Another',
           style: 'default',
         },
         {
-          text: 'Go to Menu',
+          text: 'View Menu',
           onPress: () => navigation.navigate('Home'),
           style: 'default',
         }
