@@ -4,6 +4,19 @@ A React Native mobile application I built for managing restaurant menu items wit
 
 ## Change Log – Part 3 (November 2025)
 
+- Refactored code to use for, while, and for-in loops in TypeScript for menu calculations and data management.
+- Improved code organization by defining reusable functions and using a global variable for menu data.
+- Enhanced UI for better consistency, user-friendliness, and visual appeal.
+- Added ability for chef to remove menu items from the array, instantly updating the menu.
+- Verified all features (average price by course, add/remove items, filter by course) work perfectly without errors.
+- Updated README with a detailed change log and release note.
+- Recorded a new video demo showing all features in action.
+
+### Release Note
+Demo completed and submitted on November 12, 2025. All features are working as required, and the app is ready for final grading.
+
+## Change Log – Part 3 (November 2025)
+
 - Refactored code to use for loops, while loops, and for-in loops in TypeScript for menu calculations and data management.
 - Improved code organization by defining reusable functions and using global variables for menu data.
 - Enhanced UI for better consistency, user-friendliness, and visual appeal.
