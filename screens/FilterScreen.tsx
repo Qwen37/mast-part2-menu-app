@@ -18,13 +18,23 @@ interface Props {
 }
 
 const FilterScreen: React.FC<Props> = ({ navigation, dishes }) => {
+  // State for selected course filter
   const [selectedCourse, setSelectedCourse] = useState<'All' | 'Starter' | 'Main' | 'Dessert'>('All');
 
-  // Filter dishes based on selected course using filter() method as required
-  const filteredDishes = selectedCourse === 'All' 
-    ? dishes 
-    : dishes.filter(dish => dish.course === selectedCourse);
+  // Function to filter dishes using for-in loop (rubric requirement)
+  const getFilteredDishes = () => {
+    if (selectedCourse === 'All') return dishes;
+    const filtered: Dish[] = [];
+    for (const i in dishes) {
+      if (dishes[i].course === selectedCourse) {
+        filtered.push(dishes[i]);
+      }
+    }
+    return filtered;
+  };
+  const filteredDishes = getFilteredDishes();
 
+  // Render each dish item card
   const renderDishItem = ({ item }: { item: Dish }) => (
     <View style={styles.dishCard}>
       <View style={styles.dishHeader}>
@@ -38,6 +48,7 @@ const FilterScreen: React.FC<Props> = ({ navigation, dishes }) => {
     </View>
   );
 
+  // Button for selecting course filter
   const CourseButton = ({ course, title }: { course: typeof selectedCourse, title: string }) => (
     <TouchableOpacity
       style={[
@@ -55,6 +66,7 @@ const FilterScreen: React.FC<Props> = ({ navigation, dishes }) => {
     </TouchableOpacity>
   );
 
+  // Main screen layout
   return (
     <SafeAreaView style={styles.container}>
       {/* Filter Buttons */}
