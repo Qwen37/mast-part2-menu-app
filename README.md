@@ -1,4 +1,4 @@
-# Christoffel's Menu App – Part 2
+# Christoffel's Menu App – Part 3
 
 A React Native mobile application I built for managing restaurant menu items with course filtering and price calculations.
 
