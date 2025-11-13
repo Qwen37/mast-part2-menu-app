@@ -1,4 +1,4 @@
-# Christoffel's Menu App – Part 3 (MAST.POE)
+# MAST POE – Restaurant Menu App (Part 3)
 
 A comprehensive React Native mobile application for managing restaurant menu items with advanced features including course filtering, price calculations, and chef management functionality.
 

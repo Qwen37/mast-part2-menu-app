@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "MAST.p3",
-    "slug": "MAST.p3",
+    "name": "MAST POE",
+    "slug": "mast-poe",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
